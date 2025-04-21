@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+
+import 'todays_forecast_item.dart';
 
 class ToDaysForecastWidget extends StatelessWidget {
   const ToDaysForecastWidget({
@@ -23,29 +24,11 @@ class ToDaysForecastWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  Text('9:00 AM'),
-                  // Image.network(''),
-                  Text('31°C'),
-                ],
-              ),
+              ToDaysForecastItem(),
               VerticalDivider(thickness: 2),
-              Column(
-                children: [
-                  Text('9:00 AM'),
-                  // Image.network(''),
-                  Text('31°C'),
-                ],
-              ),
+              ToDaysForecastItem(),
               VerticalDivider(thickness: 2),
-              Column(
-                children: [
-                  Text('9:00 AM'),
-                  // Image.network(''),
-                  Text('31°C'),
-                ],
-              ),
+              ToDaysForecastItem(),
             ],
           )
         ],
@@ -53,3 +36,4 @@ class ToDaysForecastWidget extends StatelessWidget {
     );
   }
 }
+
